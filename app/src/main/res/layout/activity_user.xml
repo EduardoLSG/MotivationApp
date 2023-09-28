@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".UserActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/cabin"
+        android:textColor="@color/white"
+        android:text="@string/get_ready"/>
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_margin="50dp"
+        android:hint="@string/what_or_name"
+        android:textColorHint="@color/white"
+        android:fontFamily="@font/cabin"
+        android:textSize="23sp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/save"
+        android:textAllCaps="true"
+        android:layout_marginBottom="50dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/light_purple"/>
+
+
+</RelativeLayout>

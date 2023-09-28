@@ -6,4 +6,6 @@
     <string name="get_ready">Vamos Começar?</string>
     <string name="what_or_name">Qual o seu nome?</string>
     <string name="save">Salvar</string>
+
+    <string name="validation_mandatory_name">Informe seu nome.</string>
 </resources>

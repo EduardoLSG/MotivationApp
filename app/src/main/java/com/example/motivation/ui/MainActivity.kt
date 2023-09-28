@@ -1,8 +1,11 @@
-package com.example.motivation
+package com.example.motivation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import com.example.motivation.infra.MotivationConstants
+import com.example.motivation.R
+import com.example.motivation.infra.SecurityPreferences
 import com.example.motivation.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -15,6 +18,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(binding.root)
 
 
+        handleUserName()
+
         // Eventos
         binding.buttonNewPhrase.setOnClickListener(this)
     }
@@ -23,5 +28,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         if(view.id == R.id.button_new_phrase) {
             println("Test")
         }
+    }
+
+    private fun handleUserName() {
+        val userName = SecurityPreferences(this).getString(MotivationConstants.KEY.USER_NAME)
+        binding.helloKotlin.text = "Olá, $userName"
     }
 }
